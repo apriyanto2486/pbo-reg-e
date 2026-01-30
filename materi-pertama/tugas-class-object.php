@@ -11,4 +11,11 @@ class Tugas {
     }
 }
 
+// menambah objek
+$tugas1 = new Tugas();
+$tugas1->nama = "Belajar PHP";
+$tugas1->deskripsi = "Mempelajari dasar-dasar PHP";
+$tugas1->status = "Belum Selesai";
+
+echo $tugas1->getInfo();
 ?>
