@@ -10,6 +10,12 @@ class Mahasiswa {
     public function sayHello() {
         return "Hallo, nama is " . $this->nama . " dengan NIM " . $this->nim . " saya adalah jurusan / prodi" . $this->prodi . " program.";
     }
+
+    public function getInfo(){
+        return  "NIM :" . $this->nim.
+                " <br>Nama :" . $this->nama.
+                " <br>Prodi :" . $this->prodi;
+    }
 }
 
 // $mahasiswa = new Mahasiswa("T310001", "Andi", "Teknik Informatika");
@@ -30,4 +36,8 @@ echo "Daftar Mahasiswa <br>";
 echo "------------------------ <br>";
 echo $mahasiswa1->sayHello().'<br>';
 echo $mahasiswa2->sayHello().'<br>';
+
+echo "<br>Info Mahasiswa  <br>";
+echo $mahasiswa1->getInfo().'<br>';
+echo $mahasiswa2->getInfo().'<br>';
 ?>
